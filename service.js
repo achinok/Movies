@@ -2,6 +2,6 @@
 {
     
     angular
-.module("app")
-.component("service", service)
+		.module("app")
+		.service("service", service);
 }
