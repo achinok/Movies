@@ -21,9 +21,9 @@
       };
       vm.searchMovies = function() {
         console.log('it made it here');
-        let url = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
+        let url = `https://api.themoviedb.org/3/search/movie?api_key=${APIKey}&query=batman`;
         $http.get(url).then(function(response) {
-        console.log(response);
+        console.log(response.data.results);
          
       })
       }
