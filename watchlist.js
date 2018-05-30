@@ -1,15 +1,15 @@
+"use strict";
 {
-
- 
 
 	let watchList = {
 		templateUrl: "watchlist.html",
+		
 		controller: function(service) {
 			let vm = this;
 			vm.donkey = function() {
 				console.log("button works");
-				// service.searchMovies();
-			}
+				service.searchMovies();
+			};
 
 		}
 	};

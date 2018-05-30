@@ -5,9 +5,9 @@
         .module("app", ["ngRoute"])
         .config(($routeProvider) => {
 			$routeProvider
-			.when("/home", {
-				template: ""
-			})
+			// .when("/home", {
+			// 	template: ""
+			// })
 			.when("/movies", {
 				template: "<movies></movies>"
 			})
@@ -17,6 +17,6 @@
 			.when("/search", {
 				template: "<search></search>"
 			})
-			.otherwise({ redirectTo: "/home" });
+			.otherwise({ redirectTo: "/search" });
 	});
 }
