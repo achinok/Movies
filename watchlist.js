@@ -1,12 +1,12 @@
 {
-	let watchlist = {
+	let watchList = {
 		templateUrl: '',
-		controller = function(service) {
+		controller: function(service) {
 
 		}
 	}
-	watchlist.$inject['service'];
+	watchList.$inject = ['service'];
     angular
 	.module("app")
-	.component("watchlist", watchlist);
+	.component("watchList", watchList);
 }

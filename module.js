@@ -1,6 +1,7 @@
 "use strict";
 {
     angular
+    // .module("app", []);
         .module("app", ["ngRoute"])
         .config(($routeProvider) => {
 			$routeProvider
@@ -8,7 +9,7 @@
 				template: ""
 			})
 			.when("/movieList", {
-				template: "<movie-list></movielist>"
+				template: "<movie-list></movie-list>"
 			})
 			.when("/watchList", {
 				template: "<watch-list></watch-list>"
