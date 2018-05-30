@@ -1,37 +1,34 @@
-
+"use strict";
 {
     let service = function($http) {
-      let APIKey = "c4b00959d2a2303480e492eec0ddb371";
+      let vm = this;
+      const APIKey = "c4b00959d2a2303480e492eec0ddb371";
 
-      let data = {
+      vm.data = {
         title: "Our group",
         genre: "Action",
         length: "2 hours"
       };
 
-      let details = {};
+      vm.details = {};
 
-      const getData = function() {
+      vm.getData = function() {
         return data;
       };
 
-      const setData = function(newData){
+      vm.setData = function(newData){
         data = newData;
       };
-      const searchMovies = function() {
+      vm.searchMovies = function() {
         console.log('it made it here');
-        let url = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
-
-      return $http.get(url).then(function(response) {
-        console.log(response);
-        // this callback will be called asynchronously
-        // when the response is available
+        let url = `https://api.themoviedb.org/3/search/movie?api_key=${APIKey}&query=batman`;
+        $http.get(url).then(function(response) {
+        console.log(response.data.results);
          
       })
       }
     };
 
-service.$inject = [$http];
 
     angular
 		.module("app")
