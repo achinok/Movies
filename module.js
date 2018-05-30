@@ -8,8 +8,8 @@
 			.when("/home", {
 				template: ""
 			})
-			.when("/movieList", {
-				template: "<movie-list></movie-list>"
+			.when("/movies", {
+				template: "<movies></movies>"
 			})
 			.when("/watchList", {
 				template: "<watch-list></watch-list>"

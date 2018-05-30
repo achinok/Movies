@@ -1,6 +1,6 @@
 {
 
-    let movieList = {
+    let movies = {
         templateUrl: "movies.html",
 
         controller: function (service) {
@@ -13,5 +13,5 @@
 
     angular
 .module("app")
-.component("movieList", movieList)
+.component("movies", movies)
 }

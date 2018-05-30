@@ -1,6 +1,9 @@
 {
+
+ 
+
 	let watchList = {
-		templateUrl: '',
+		templateUrl: "watchlist.html",
 		controller: function(service) {
 
 		}
