@@ -1,6 +1,7 @@
 "use strict";
 {
     angular
+    // .module("app", []);
         .module("app", ["ngRoute"])
         .config(($routeProvider) => {
 			$routeProvider
@@ -12,6 +13,9 @@
 			})
 			.when("/watchList", {
 				template: "<watch-list></watch-list>"
+			})
+			.when("/search", {
+				template: "<search></search>"
 			})
 			.otherwise({ redirectTo: "/home" });
 	});

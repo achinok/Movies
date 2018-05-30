@@ -8,11 +8,22 @@
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
-    
+    {{ 2+ 2 }}
+
     <ng-view></ng-view>
 
+    <div id="navbar">
+    <a href="">Home</a>
+    <a href="/movieList">Movie List</a>
+    <a href="/watchList">Watch List</a>
+    <a href="/search">Search</a>
+    </div>
+   
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
     <script src="module.js"></script>
     <script src="search.js"></script>
