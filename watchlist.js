@@ -8,7 +8,7 @@
 			let vm = this;
 			vm.donkey = function() {
 				console.log("button works");
-				service.searchMovies();
+				service.search();
 			};
 
 		}

@@ -11,9 +11,10 @@
                 length: ""
 
             }
-            vm.update = function () {
-                service.filter(vm.filter);
-            }
+            vm.update = function() {
+                console.log("button works");
+                service.search();
+            };
         }
     }
 
