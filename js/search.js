@@ -2,8 +2,8 @@
     let search = {
         templateUrl: "search.html",
 
-        controller: function (service, $location) {
-            let vm = this;
+        controller: function (service) {
+          let vm = this;
 
             vm.filter = {
                 year: "",
@@ -11,16 +11,23 @@
                 length: ""
 
             }
-            vm.update = function() {
-                console.log("button works");
-                service.search();
-
-            };
+            // vm.print = function(){
+            //  console.log(vm.);
+            // }
+            vm.update = function () {
+                service.filter(vm.filter);
+            },
+            vm.genre = [
+              {id: 12, name: "Adventure"},
+              {id: 32, name: "Comedy"},
+              {id: 10749, name: "Romance"},
+              {id: 14, name: "Fantasy"}
+            ]
+          }
         }
-    }
 
 
-    search.$inject = ["service", "$location"];
+    search.$inject = ["service"];
 
 
 

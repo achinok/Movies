@@ -1,3 +1,11 @@
-#navbar{
-    
+.movieStyle {
+	border: 1px black solid;
+	width: 30%;
+	padding: 10px;
+	margin:	5px;
+
+}
+.allMovies {
+	display: flex;
+	flex-wrap: wrap;
 }
