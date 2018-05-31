@@ -2,7 +2,7 @@
     let search = {
         templateUrl: "search.html",
 
-        controller: function (service) {
+        controller: function (service, $location) {
             let vm = this;
 
             vm.filter = {
@@ -14,12 +14,13 @@
             vm.update = function() {
                 console.log("button works");
                 service.search();
+
             };
         }
     }
 
 
-    search.$inject = ["service"];
+    search.$inject = ["service", "$location"];
 
 
 

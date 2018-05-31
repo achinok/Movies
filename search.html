@@ -1,18 +1,10 @@
-{{4*6}}
-<div class="navbar">
-    <a href="#!/search">Search</a>
-    <a href="#!/myList">Movie List</a>
-    <a href="#!/watchList">Watch List</a>
-</div>
-       
-
 <h1>Select What You Would Like To Watch:</h1>
 
 <h2>Release Date</h2>
 
 <form>
   Enter a year:
-  <input id="yearInput" name="year" type="text" placeholder="Enter a year..example: 1999"/>
+  <input id="yearInput" name="year" type="text" placeholder="Enter a year..."/>
 </form>
 
 
@@ -26,12 +18,10 @@
 
 <select>
     <option value="length" selected>Length</option>
-    <option value="30mins">30 Minutes</option>
-    <option value="60mins">1 hour</option>
-    <option value="120mins">2 hours</option>
-    <option value="180mins">3 hours</option>
+    <option value="30">30 Minutes</option>
+    <option value="60">1 hour</option>
+    <option value="120">2 hours</option>
+    <option value="180">3 hours</option>
 </select>
 
-<input type="submit"/>
-
-<button ng-click="$ctrl.update();">Get Data</button>
+<button ng-click="$ctrl.update();">Search</button>

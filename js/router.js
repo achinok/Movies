@@ -1,13 +1,9 @@
 "use strict";
 {
     angular
-    // .module("app", []);
-        .module("app", ["ngRoute"])
+        .module("app")
         .config(($routeProvider) => {
 			$routeProvider
-			// .when("/home", {
-			// 	template: ""
-			// })
 			.when("/myList", {
 				template: "<movies></movies>"
 			})
@@ -16,6 +12,9 @@
 			})
 			.when("/search", {
 				template: "<search></search>"
+			})
+			.when("/details", {
+				template: "<details></details>"
 			})
 			.otherwise({ redirectTo: "/search" });
 	});
