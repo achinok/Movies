@@ -9,8 +9,8 @@
                 year: "",
                 genre: "",
                 length: ""
-
-            }
+      }
+      
             vm.update = function () {
                 service.filter(vm.filter);
             }
