@@ -7,13 +7,14 @@
 
             vm.filter = {
                 year: "",
-                genre: "",
-                length: ""
-      }
-      
-            vm.update = function () {
-                service.filter(vm.filter);
+                length: "",  
+                genre = new Genre([[12, "Adventure"], [35, "Comedy"], [10749, "Romance"], [14, "Fantasy"]]),       
             }
+
+            vm.update = function() {
+                console.log("button works");
+                service.search();
+            };
         }
     }
 

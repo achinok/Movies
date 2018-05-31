@@ -1,19 +1,25 @@
-<div id="navbar">
-        <a href="#!/index">Home</a>
-        <a href="#!/movies">Movies</a>
-        <a href="#!/watchList">Watch List</a>
-        <a href="#!/search">Search</a>
-        </div>
+{{8+10}}
+<div class="navbar">
+	<a href="#!/search">Search</a>
+    <a href="#!/myList">Movie List</a>
+    <a href="#!/watchList">Watch List</a>
+</div>
 
 <h1>Choose a Movie!</h1>
 
 <div class="allMovies">
 
-<div class="movie" ng-repeat="movie in movielist"  />
+<div class="movie" ng-repeat="movie in $ctrl.movieData" />
+  <p>{{movie.title}}</P>
+  <p>{{movie.genre}}</p>
+  <p>{{movie.length}}</p>
+  <p>{{movie.date}}</p>
+  <p>{{movie.overview}}</p>
+  <button ng-click="$ctrl.details(movie.id)">more...</button>
+
+</div>
 
 
-
-
-
+<button ng-click="clicked">Save</button>
 
 </div>

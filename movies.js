@@ -5,7 +5,7 @@
 
         controller: function (service) {
             let vm = this;
-            return 0;
+            vm.movieData = service.movieData;
            
 		}
 	}
@@ -14,5 +14,3 @@
 .module("app")
 .component("movies", movies)
 }
-
-// have a function for the array of movies to 
