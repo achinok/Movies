@@ -46,25 +46,41 @@
 
         $http.get(url).then(function(response) {
           // Sets data that will be displayed 
+          vm.movieData = [];
           vm.setData(response.data.results);
 
           $location.path("/myList");         
         })
       }
 
-
       vm.userlist = [];
+      vm.idTracker = vm.userlist.length;
+
       vm.addToUserList = function(id) {
-        vm.userlist.push(data.id);
+        let current = vm.idTracker;
+        vm.userlist.push(vm.movieData[id]);
+        vm.userlist[current].id = current; 
+      }
+      vm.removeFromUserList = function(id) {
+        console.log(id);
+        vm.userlist.splice(id, 1);
+        console.log(vm.userlist);
+
+        for(let i = 0; i<vm.userlist.length; i++){
+          vm.userlist[i].id = i;
+        }
       }
       vm.moreDetails = function(watch, id) {
+        console.log(watch);
         if(watch){
-          vm.details = vm.userList[id];
+          console.log(id);
+          vm.details = vm.userlist[id];
         }
         else{
+          console.log("gonzoooooo");
           vm.details = vm.movieData[id];
         }
-        $location.path("/details");
+        $location.path("/more");
       }
     };
 
