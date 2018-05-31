@@ -1,14 +1,16 @@
-{{3*4}}
+<h1>These movies are waiting for you...</h1>
 
-<div class="navbar">
-	<a href="#!/search">Search</a>
-    <a href="#!/myList">Movie List</a>
-    <a href="#!/watchList">Watch List</a>
+<div class="allMovies">
+
+<div class="movie" ng-repeat="movie in $ctrl.movieData"/>
+  <p>{{movie.title}}</P>
+  <p>{{movie.length}}</p>
+  <p>{{movie.date}}</p>
+  <button ng-click="$ctrl.moreDetails(true, movie.id)">more...</button>
+
 </div>
 
 
-<button ng-click="$ctrl.update();">This works</button>
 
-<div></div>
-       
-    
+
+</div>
