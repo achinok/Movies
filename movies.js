@@ -5,7 +5,7 @@
 
         controller: function (service) {
             let vm = this;
-            return 0;
+            vm.movieData = service.movieData;
            
 
 		}
