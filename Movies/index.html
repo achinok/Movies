@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies!</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#!/search">Search</a>
+        <a href="#!/myList">Movie List</a>
+        <a href="#!/watchList">Watch List</a>
+    </div>
+
+    <ng-view></ng-view>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+    <script src="js/module.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/movies.js"></script>
+    <script src="js/watchlist.js"></script>
+    <script src="js/more.js"></script>
+</body>
+</html>
