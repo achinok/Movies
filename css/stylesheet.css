@@ -10,6 +10,9 @@
 	flex-wrap: wrap;
 }
 
-img{
-	border-radius: 15%;
+body {
+	background-image: url(/css/chairs.jpg);
+}
+a, h1, h2, p, form {
+	color: white;
 }
