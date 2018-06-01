@@ -3,14 +3,14 @@
 <div class="allMovies">
 
 <div class="movieStyle" ng-repeat="movie in $ctrl.movieData"/>
-  <p>{{movie.title}}</P>
+  <h2>{{movie.title}}</h2>
   <p>{{movie.length}}</p>
   <p>{{movie.date}}</p>
   <img src="{{movie.img}}"/>
   <div class="buttons">
-  <button ng-click="$ctrl.moreDetails(false, movie.id)">more...</button>
-  <button ng-click="$ctrl.addItem(movie.id)" ng-hide="movie.saved">Save</button>
-</div>
+    <button ng-click="$ctrl.moreDetails(false, movie.id)">more...</button>
+    <button ng-click="$ctrl.addItem(movie.id)" ng-hide="movie.saved">Save</button>
+  </div>
 </div>
 
 </div>

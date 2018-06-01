@@ -20,7 +20,7 @@
         date: 2018,
         length: "2 hours",
         overview: "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-        img: `https://image.tmdb.org/t/p/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg`,
+        img: `https://image.tmdb.org/t/p/w300/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg`,
         saved: false
       }];
 
@@ -47,7 +47,7 @@
             date: movie.release_date.slice(0,4),
             length: movie.runtime,
             overview: movie.overview,
-            img: `https://image.tmdb.org/t/p/w300/${movie.poster_path}`,
+            img: `https://image.tmdb.org/t/p/w185/${movie.poster_path}`,
             saved: false
           };
           vm.movieData.push(movieEntry);
@@ -58,8 +58,8 @@
       // Called in search component. Takes in filter options and makes API request to TMDB
       // Checks to make sure search parameters have value if none, sets to default
       // Calls setData upon successful response and updates movieData
-      vm.search = function( genre, year, length) {
-        console.log('it made it here');
+      vm.search = function(genre, year, length) {
+
         //let url = `https://api.themoviedb.org/3/search/movie?api_key=${APIKey}&query=batman`;
         let url = `https://api.themoviedb.org/3/discover/movie?with_runtime.lte=${length}&year=2010&with_genres=${genre}&primary_release_year=${year}&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=${APIKey}`;
 

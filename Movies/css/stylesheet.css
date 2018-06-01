@@ -1,0 +1,72 @@
+.movieStyle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px black solid;
+	border-radius: 5px;
+	width: 25%;
+	padding: 10px;
+	margin:	40px;
+	background-color: black;
+
+}
+.movieStyle img{
+	width: 100%;
+	height: 100%;
+}
+.buttons {
+	width: 100%;
+	display: flex;
+}
+.buttons button {
+	width: 50%;
+	margin: 0;
+	padding: 10px 0 23px 0;
+}
+.allMovies {
+	display: flex;
+	flex-wrap: wrap;
+}
+#more {
+	margin-top: 10%;
+	display: flex;
+	width: 100%;
+	background-color: black;
+}
+#more img {
+	width: 30%;
+	margin: 15px;
+}
+#details {
+
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url(/css/chairs.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: black;
+	background-blend-mode: luminosity;
+}
+a, h1, h2, p, form {
+	color: white;
+}
+.thisform {
+	margin-top: 10%;
+	text-align: center;
+}
+.navbar{
+    text-align: right;
+    margin-right: 30px;
+    color: red;
+}
+.formStyle {
+}
+.formStyle select, .formStyle input {
+	padding: 5px;
+}
+
