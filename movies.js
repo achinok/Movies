@@ -19,10 +19,6 @@
             	service.addToUserList(id);
             }
 
-            vm.addImg = function(id){
-                
-            }
-
 		}
 	};
 

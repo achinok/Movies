@@ -21,7 +21,7 @@
             },
             vm.genre = [
               {id: 12, name: "Adventure"},
-              {id: 32, name: "Comedy"},
+              {id: 35, name: "Comedy"},
               {id: 10749, name: "Romance"},
               {id: 14, name: "Fantasy"}
             ]
