@@ -7,18 +7,10 @@
 
             vm.filter = {
                 year: "",
-                // length: ""
-                // genre = new Map([[12, "Adventure"], [35, "Comedy"], [10749, "Romance"], [14, "Fantasy"]]),                    
-            }
+                genre: "",
+                length: ""
 
-
-<<<<<<< HEAD
-            vm.pickGenre = function() {
-                
-            }
-=======
             },
->>>>>>> 66c0aa2ebe0abe54483e49bd23736f734d89dba4
             // vm.print = function(){
             //  console.log(vm.);
             // }

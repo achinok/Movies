@@ -32,7 +32,8 @@
             date: movie.release_date.slice(0,4),
             length: movie.runtime,
             overview: movie.overview,
-            img: `https://image.tmdb.org/t/p/w185/${movie.posterPath}`
+            // pull these movie images from your API  
+            img: `https://image.tmdb.org/t/p/w185/${movie.poster_path}`
           };
           vm.movieData.push(movieEntry);
         }
