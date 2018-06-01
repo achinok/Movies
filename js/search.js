@@ -10,12 +10,12 @@
                 genre: "",
                 length: ""
 
-            }
+            },
             // vm.print = function(){
             //  console.log(vm.);
             // }
             vm.update = function () {
-                service.filter(vm.filter);
+                service.search();
             },
             vm.genre = [
               {id: 12, name: "Adventure"},
