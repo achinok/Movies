@@ -5,7 +5,10 @@
 
         controller: function (service) {
             let vm = this;
-            vm.movieData = service.movieData;
+            vm.movieData.title = service.movieData;
+    
+
+
            
 		}
 	}

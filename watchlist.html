@@ -1,12 +1,13 @@
 <h1>These movies are waiting for you...</h1>
 
 <div class="allMovies">
-
-<div class="movie" ng-repeat="movie in $ctrl.movieData"/>
+<!-- <button ng-click="$ctrl.print();">Print Details in Console</button> -->
+<div class="movieStyle" ng-repeat="movie in $ctrl.movieData"/>
   <p>{{movie.title}}</P>
   <p>{{movie.length}}</p>
   <p>{{movie.date}}</p>
   <button ng-click="$ctrl.moreDetails(true, movie.id)">more...</button>
+  <button ng-click="$ctrl.removeItem(movie.id)">Remove</button>
 
 </div>
 

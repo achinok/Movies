@@ -13,8 +13,8 @@
 			.when("/search", {
 				template: "<search></search>"
 			})
-			.when("/details", {
-				template: "<details></details>"
+			.when("/more", {
+				template: "<more></more>"
 			})
 			.otherwise({ redirectTo: "/search" });
 	});
