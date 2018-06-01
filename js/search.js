@@ -12,14 +12,18 @@
             }
 
 
+<<<<<<< HEAD
             vm.pickGenre = function() {
                 
             }
+=======
+            },
+>>>>>>> 66c0aa2ebe0abe54483e49bd23736f734d89dba4
             // vm.print = function(){
             //  console.log(vm.);
             // }
             vm.update = function () {
-                service.filter(vm.filter);
+                service.search();
             },
             vm.genre = [
               {id: 12, name: "Adventure"},
