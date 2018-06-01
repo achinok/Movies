@@ -6,12 +6,28 @@
   <p>{{movie.title}}</P>
   <p>{{movie.length}}</p>
   <p>{{movie.date}}</p>
+  <img src="{{movie.img}}"/>
   <button ng-click="$ctrl.moreDetails(false, movie.id)">more...</button>
   <button ng-click="$ctrl.addItem(movie.id)">Save</button>
+</div>
 
+<div class="movieStyle" ng-repeat="movie in $ctrl.movieEntry"/>
+  <p>{{movie.title}}</P>
+  <p>{{movie.length}}</p>
+  <p>{{movie.date}}</p>
+  <img src="{{movie.img}}"></img>
+  <button ng-click="$ctrl.moreDetails(false, movie.id)">more...</button>
+  <button ng-click="$ctrl.addItem(movie.id)">Save</button>
 </div>
 
 
 
+
+
+
+</div>
+
+
+<button ng-click="clicked">Save</button>
 
 </div>

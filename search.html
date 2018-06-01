@@ -4,22 +4,23 @@
 
 <form>
   Enter a year:
-  <input id="yearInput" name="year" type="text" placeholder="Enter a year..example: 1999" ng-model="year"/>
+  <input id="yearInput" name="year" type="text" placeholder="Enter a year..example: 1999" ng-model="$ctrl.filter.year"/>
 </form>
 
 <form name="myForm">
-    <label for="repeatSelect"> Repeat select: </label>
+    <label for="repeatSelect"> Genre: </label>
 
     <select ng-model="$ctrl.filter.genre">
-      <option ng-repeat="option in $ctrl.genre" value="option.id">{{option.name}}</option>
+      <option ng-repeat="option in $ctrl.genre" value="{{option.id}}">{{option.name}}</option>
     </select>
   </form>
 
-<select>
-    <option value="length" selected>Length</option>
-    <option value="30mins">30 Minutes</option>
-    <option value="60mins">1 hour</option>
-    <option value="120mins">2 hours</option>
-    <option value="180mins">3 hours</option>
+<select ng-model="$ctrl.filter.length">
+    <option value="" selected>Length</option>
+    <option value="30">30 Minutes</option>
+    <option value="60">1 hour</option>
+    <option value="120">2 hours</option>
+    <option value="180">3 hours</option>
 </select>
 <button ng-click="$ctrl.update();">Search</button>
+<button ng-click="$ctrl.print();">Figure it out</button>
