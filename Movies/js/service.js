@@ -58,8 +58,8 @@
       // Called in search component. Takes in filter options and makes API request to TMDB
       // Checks to make sure search parameters have value if none, sets to default
       // Calls setData upon successful response and updates movieData
-      vm.search = function( genre, year, length) {
-        console.log('it made it here');
+      vm.search = function(genre, year, length) {
+
         //let url = `https://api.themoviedb.org/3/search/movie?api_key=${APIKey}&query=batman`;
         let url = `https://api.themoviedb.org/3/discover/movie?with_runtime.lte=${length}&year=2010&with_genres=${genre}&primary_release_year=${year}&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=${APIKey}`;
 
